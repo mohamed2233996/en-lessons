@@ -70,7 +70,16 @@ const Landing = () => {
                             <span className='text-xl font-bold text-primary hover:text-hprimary'>Login</span>
                         </Link>
                     </div>
-                    <div className='flex justify-center items-center mt-8'>
+                    <div>
+                        <p className='text-center text-gray-600 dark:text-gray-300'>
+                            Already have an account? <Link href='/login'>Login</Link>
+                        </p>
+                    </div>
+                    <div className='mt-8'>
+                        <p className='font-bold'>Sponsored by Miss <span className='text-primary'>Menna Elshemy❤️️</span></p>
+                        <p className='font-bold'>Programming and design by <span className='text-primary'>Mohamed Gamal❤️️</span></p>
+                    </div>
+                    <div className='flex justify-center items-center'>
                         <div className='ml-4'>
                             <span href='/faq'>FAQ</span>
                         </div>
@@ -81,7 +90,6 @@ const Landing = () => {
                             <span href='/privacy'>Privacy policy</span>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
