@@ -19,7 +19,7 @@ const Landing = () => {
                         <div className='z-10 relative'>
                             <Image className="w-full h-auto z-10" src={HeroImg} alt="Hero Image" />
                         </div>
-                        <span className='absolute top-1/2 right-1/2 -translate-y-1/2 translate-x-1/2 w-[400px] h-[400px] bg-primary rounded-2xl rotate-12'></span>
+                        <span className='absolute top-1/2 right-1/2 -translate-y-1/2 translate-x-1/2 w-[60%] h-[60%]  bg-primary rounded-2xl rotate-12'></span>
                     </div>
                 </div>
                 <div className='text-center flex flex-col items-center gap-4 pt-20'>
