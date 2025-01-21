@@ -1,10 +1,17 @@
+'use client'
+import { useRouter } from "next/navigation";
 import Landing from "./_componant/Landing";
-import Navbar from "./_componant/Navbar";
 
 export default function Home() {
+  const isLoggedIn = localStorage.getItem('isLoggedIn');
+      const router = useRouter();
+
+  if (isLoggedIn) {
+    router.push('/dashboard');
+    return null;
+  }
   return (
     <div>
-      <Navbar />
       <Landing />
     </div>
   );

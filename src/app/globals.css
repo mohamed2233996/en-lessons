@@ -5,7 +5,6 @@
 :root {
   --primary-color: #758bfd;
   --hprimary-color: #2246f8;
-  --background: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,3 +17,4 @@
 body {
   font-family: math;
 }
+

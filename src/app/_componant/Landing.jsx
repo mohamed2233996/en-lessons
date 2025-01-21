@@ -11,7 +11,7 @@ const Landing = () => {
                     <div className="text-center lg:text-left w-full lg:w-1/2">
                         <h1 className="text-5xl font-bold mb-8">Welcome to <span className='text-primary'>EN Lessons</span></h1>
                         <p className="text-lg leading-relaxed mb-8 text-gray-600 dark:text-gray-300">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada, quam vel suscipit hendrerit, ex mauris vestibulum elit, in rutrum odio velit non neque.
+                        Start with us by pre-booking the online course, or start now to benefit from the courses available on the website.
                         </p>
                         <a href="#" className="text-primary border border-primary font-bold hover:text-white hover:bg-primary p-4 rounded-full ">Start Learning</a>
                     </div>

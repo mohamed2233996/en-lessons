@@ -1,9 +1,15 @@
 'use client'
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
+import userImgDark from "@/imges/user.png"
+import userImg from "@/imges/user-image-with-black-background.png"
 
 const Navbar = () => {
 
     const [theme, setTheme] = useState('light')
+    const [usermenuOpen, setusermenuOpen] = useState(false);
+    const [userLogin, setUserLogin] = useState(null);
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
 
     useEffect(() => {
         const storedTheme = localStorage.getItem('theme');
@@ -29,16 +35,63 @@ const Navbar = () => {
             setTheme('dark');
         }
     }
+
+    const toggleMeun = () => {
+        setusermenuOpen(!usermenuOpen);
+    }
+
+    useEffect(() => {
+        if (isLoggedIn) {
+            const userLogin = JSON.parse(localStorage.getItem('userLogin'));
+            setUserLogin(userLogin);
+            console.log(userLogin)
+        }
+    }, []);
+
     return (
         // Navbar
-        <nav class="bg-white border-gray-200 dark:bg-gray-900">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="/" class="flex items-end space-x-2 rtl:space-x-reverse text-2xl font-bold">
+        <nav className="bg-white border-gray-200 dark:bg-gray-900">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="/" className="flex items-end space-x-2 rtl:space-x-reverse text-2xl font-bold">
                     <span className='text-primary md:text-5xl text-2xl'>EN</span>
-                    <span class="self-center dark:text-white">Lessons</span>
+                    <span className="self-center dark:text-white">Lessons</span>
                 </a>
                 <div className='flex items-center gap-6'>
-                    <a href="#" className="text-primary border border-primary font-bold hover:text-white hover:bg-primary p-4 rounded-full ">Start Learning</a>
+                    <a href="#" className="text-primary border border-primary font-bold hover:text-white hover:bg-primary md:p-4 p-2 rounded-full ">Start Learning</a>
+                    {isLoggedIn ?
+                        <div className="relative">
+                            <button type="button" onClick={toggleMeun} className="flex text-smrounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+                                <span className="sr-only">Open user menu</span>
+                                <Image className="w-8 h-8 rounded-full" src={
+                                    theme === 'dark' ? userImgDark : userImg
+                                } alt="user photo" />
+                            </button>
+                            {usermenuOpen ?
+                                <div className="z-50 absolute right-0 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+                                    <div className="px-4 py-3">
+                                        <span className="block text-sm text-gray-900 dark:text-white">{userLogin.userName}</span>
+                                        <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">{userLogin.email}</span>
+                                    </div>
+                                    <ul className="py-2" aria-labelledby="user-menu-button">
+                                        <li>
+                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onClick={
+                                                () => {
+                                                    localStorage.removeItem('isLoggedIn');
+                                                    window.location.href = '/';
+                                                }
+                                            } className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                : ''}
+                        </div>
+                        : ""}
                     {/*toggel btn dark */}
                     <button
                         type="button"
