@@ -17,7 +17,7 @@ const Page = () => {
             setUserLogin(userLogin);
             console.log(userLogin)
         }
-    }, [router]);
+    }, []);
 
     return (
         <div className='py-20 bg-white dark:bg-gray-900 dark:text-white'>

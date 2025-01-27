@@ -9,7 +9,8 @@ const Navbar = () => {
     const [theme, setTheme] = useState('light')
     const [usermenuOpen, setusermenuOpen] = useState(false);
     const [userLogin, setUserLogin] = useState(null);
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    const [isLoggedIn, setisLoggedIn] = useState(Boolean);
+
 
     useEffect(() => {
         const storedTheme = localStorage.getItem('theme');
@@ -41,10 +42,11 @@ const Navbar = () => {
     }
 
     useEffect(() => {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
         if (isLoggedIn) {
+            setisLoggedIn(true);
             const userLogin = JSON.parse(localStorage.getItem('userLogin'));
             setUserLogin(userLogin);
-            console.log(userLogin)
         }
     }, []);
 
