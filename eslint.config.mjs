@@ -7,12 +7,12 @@ const __dirname = dirname(__filename);
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
-  recommendedConfig: "eslint:recommended"
 });
 
 const eslintConfig = [
-  ...compat.extends("eslint:recommended"),
-  ...compat.extends("next/core-web-vitals")
+  ...compat.extends("eslint:recommended"), // يجب أن تكون التوسعات ككائنات أو مسارات صحيحة
+  ...compat.extends("next/core-web-vitals"), // يمكنك إضافة تكوينات أخرى مثل هذه
 ];
 
 export default eslintConfig;
+
