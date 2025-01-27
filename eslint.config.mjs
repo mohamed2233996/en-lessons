@@ -7,6 +7,7 @@ const __dirname = dirname(__filename);
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
+  recommendedConfig: "eslint:recommended"  // أضف هذا السطر لتحديد التكوين الموصى به
 });
 
 const eslintConfig = [
