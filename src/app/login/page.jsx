@@ -19,6 +19,8 @@ const Page = () => {
     // التحقق من البيانات المدخلة والتسجيل الدخول
     const login = (e) => {
         e.preventDefault();
+
+        if (typeof window !== "undefined" && typeof localStorage !== "undefined") {
         // جلب بيانات المستخدمين من localStorage
         const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
 
@@ -36,6 +38,7 @@ const Page = () => {
         } else {
             // إذا كانت البيانات غير صحيحة، عرض رسالة الخطأ
             setError('البريد الإلكتروني أو كلمة المرور غير صحيحة');
+        }
         }
     };
 
