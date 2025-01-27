@@ -6,14 +6,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const compat = new FlatCompat({
+  root: __dirname,
+  ignore: ["**/*.test.{js,jsx,ts,tsx}"],
+  ignorePatterns: ["**/node_modules/**", "**/dist/**", "**/public/**"],
   baseDirectory: __dirname,
-  recommendedConfig: "eslint:recommended"  // أضف هذا السطر لتحديد التكوين الموصى به
 });
 
-const eslintConfig = [
-  ...compat.extends("eslint:recommended"), // يجب أن تكون التوسعات ككائنات أو مسارات صحيحة
-  ...compat.extends("next/core-web-vitals"), // يمكنك إضافة تكوينات أخرى مثل هذه
-];
+const eslintConfig = [...compat.extends("next/core-web-vitals")];
 
 export default eslintConfig;
-
