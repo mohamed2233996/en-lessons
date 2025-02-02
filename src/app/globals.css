@@ -18,3 +18,8 @@ body {
   font-family: math;
 }
 
+.MainBox:hover .infoBox{
+  opacity: 1;
+  transform: translateY(0);
+}
+
