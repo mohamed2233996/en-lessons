@@ -8,12 +8,12 @@ const BooksBox = (prop) => {
             <div className='overflow-hidden'>
                 <Image className="rounded-t-lg" src={prop.ImgSrc} alt="" />
             </div>
-            <div className="p-5 infoBox absolute bottom-0 h-1/2 bg-white dark:bg-black bg-opacity-80 transition-all opacity-0 text-center flex flex-col justify-between">
+            <div className="p-5 shadow-lg overflow-hidden infoBox absolute bottom-0 h-1/2 bg-white dark:bg-black bg-opacity-80 transition-all opacity-0 text-center flex flex-col justify-around">
                 <Link href={prop.link}>
-                    <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">{prop.title}</h5>
+                    <h5 className="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{prop.title}</h5>
                 </Link>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">By <span className='font-bold'>{prop.author}</span></p>
+                <p className="mb-3 text-sm lg:text-base text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <p className="mb-3 text-sm lg:text-base text-gray-700 dark:text-gray-400">By <span className='font-bold'>{prop.author}</span></p>
                 <Link href={prop.link} className="inline-flex justify-center items-center text-primary text-center border border-primary font-bold hover:text-white hover:bg-primary p-4 rounded-full">
                     Discover Book
                     <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

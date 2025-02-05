@@ -56,42 +56,42 @@ const BooksData = [
     },
     {
         id: 7,
-        title: "Prepare 1",
+        title: "Preparatory 1",
         image: BookPrep1,
         author: "Mess: Mena Alshemy",
-        link: "/prepare1"
+        link: "/Preparatory1"
     },
     {
         id: 8,
-        title: "Prepare 2",
+        title: "Preparatory 2",
         image: BookPrep2,
         author: "Mess: Mena Alshemy",
-        link: "/prepare2"
+        link: "/Preparatory2"
     },
     {
         id: 9,
-        title: "Prepare 3",
+        title: "Preparatory 3",
         image: BookPrep3,
         author: "Mess: Mena Alshemy",
-        link: "/prepare3"
+        link: "/Preparatory3"
     },
     {
         id: 10,
-        title: "Sec 1",
+        title: "Secondary 1",
         image: BookSec1,
         author: "Mess: Mena Alshemy",
         link: "/sec1"
     },
     {
         id: 11,
-        title: "Sec 2",
+        title: "Secondary 2",
         image: BookSec2,
         author: "Mess: Mena Alshemy",
         link: "/sec2"
     },
     {
         id: 12,
-        title: "Sec 3",
+        title: "Secondary 3",
         image: BookSec3,
         author: "Mess: Mena Alshemy",
         link: "/sec3"
