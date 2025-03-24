@@ -14,87 +14,111 @@ import BookSec3 from "@/imges/sec3.png"
 const BooksData = [
     {
         id: 1,
-        title: "Connect 1",
+        title: "Connect1",
+        discrpation:"A book that contains everything related to the first grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
         image: Book1,
-        author: "Mess: Mena Alshemy",
-        link: "/connect1"
+        price: 10,
+        author: "Mena Alshemy",
+        link: "/books/connect1"
     },
     {
         id: 2,
-        title: "Connect 2",
+        title: "Connect2",
+        discrpation: "A book that contains everything related to the second grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
         image: Book2,
-        author: "Mess: Mena Alshemy",
-        link: "/connect2"
+        price: 0,
+        author: "Mena Alshemy",
+        link: "/books/connect2"
     },
     {
         id: 3,
-        title: "Connect 3",
+        title: "Connect3",
+        discrpation: "A book that contains everything related to the third grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
         image: Book3,
-        author: "Mess: Mena Alshemy",
-        link: "/connect3"
+        price: 15,
+        author: "Mena Alshemy",
+        link: "/books/connect3"
     },
     {
         id: 4,
-        title: "Connect 4",
+        title: "Connect4",
+        discrpation: "A book that contains everything related to the fourth grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
         image: Book4,
-        author: "Mess: Mena Alshemy",
-        link: "/connect4"
+        price: 5,
+        author: "Mena Alshemy",
+        link: "/books/connect4"
     },
     {
         id: 5,
-        title: "Connect 5",
+        title: "Connect5",
+        discrpation: "A book that contains everything related to the fifth grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
         image: Book5,
-        author: "Mess: Mena Alshemy",
-        link: "/connect5"
+        price: 0,
+        author: "Mena Alshemy",
+        link: "/books/connect5"
     },
     {
         id: 6,
-        title: "Connect 6",
+        title: "Connect6",
+        discrpation: "A book that contains everything related to the sixth grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
         image: Book6,
-        author: "Mess: Mena Alshemy",
-        link: "/connect6"
+        price: 0,
+        author: "Mena Alshemy",
+        link: "/books/connect6"
     },
     {
         id: 7,
         title: "Preparatory 1",
+        discrpation: "A book that contains everything related to the first grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
         image: BookPrep1,
-        author: "Mess: Mena Alshemy",
-        link: "/Preparatory1"
+        price: 10,
+        author: "Mena Alshemy",
+        link: "/books/Preparatory1"
     },
     {
         id: 8,
         title: "Preparatory 2",
+        discrpation: "A book that contains everything related to the second grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
         image: BookPrep2,
-        author: "Mess: Mena Alshemy",
-        link: "/Preparatory2"
+        price: 12,
+        author: "Mena Alshemy",
+        link: "/books/Preparatory2"
     },
     {
         id: 9,
         title: "Preparatory 3",
+        discrpation: "A book that contains everything related to the third grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
         image: BookPrep3,
-        author: "Mess: Mena Alshemy",
-        link: "/Preparatory3"
+        price: 17,
+        author: "Mena Alshemy",
+        link: "/books/Preparatory3"
     },
     {
         id: 10,
         title: "Secondary 1",
+        discrpation: "A book that contains everything related to the first grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
         image: BookSec1,
-        author: "Mess: Mena Alshemy",
-        link: "/sec1"
+        price: 10,
+        author: "Mena Alshemy",
+        link: "/books/sec1"
     },
     {
         id: 11,
         title: "Secondary 2",
+        discrpation: "A book that contains everything related to the second grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
         image: BookSec2,
-        author: "Mess: Mena Alshemy",
-        link: "/sec2"
+        price: 11,
+        author: "Mena Alshemy",
+        link: "/books/sec2"
     },
     {
         id: 12,
         title: "Secondary 3",
+        discrpation: "A book that contains everything related to the third grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
         image: BookSec3,
-        author: "Mess: Mena Alshemy",
-        link: "/sec3"
+        price: 0,
+        author: "Mena Alshemy",
+        link: "/books/sec3"
     }
 ]
 

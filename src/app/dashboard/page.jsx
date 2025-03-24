@@ -26,7 +26,7 @@ const Page = () => {
     return (
         <div className='py-20 bg-white dark:bg-gray-900 dark:text-white'>
             <div className="container m-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
                     <div className="flex flex-col lg:items-start items-center pt-8 pb-12">
                         <h1 className="text-gray-900 dark:text-white text-center lg:text-start">
                             <p className='text-5xl font-bold'>Hello {userLogin?.userName}!</p>
@@ -45,7 +45,7 @@ const Page = () => {
                 <div className='mt-20' id='books'>
                     <h2 className='text-4xl font-bold text-gray-900 dark:text-white text-center'>Popular Books</h2>
                     <p className='text-xl text-gray-600 text-center dark:text-gray-300 mt-10'>Discover the latest and greatest books in English language</p>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8 mt-20'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center justify-items-center gap-8 mt-20 px-4'>
                         {BooksData?.map(book=>{
                             return(
                                 <BooksBox 

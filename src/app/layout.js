@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${merriweather.variable} antialiased bg-white dark:bg-gray-900`}>
       <Navbar />
         {children}
