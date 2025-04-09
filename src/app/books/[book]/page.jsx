@@ -32,7 +32,7 @@ const Book = () => {
                         <p className="text-xl text-gray-600 dark:text-gray-300">Author: {bookData?.author}</p>
                         <p className="text-xl text-gray-600 dark:text-gray-300">Price: $ {bookData?.price}</p>
                         <a href="#" className="text-primary w-full text-center mb-2 border border-primary font-bold hover:text-white hover:bg-primary p-4 rounded-full mt-4">Add to Cart</a>
-                        <a href="#" className="w-full text-center font-bold text-white bg-primary p-4 hover:shadow-2xl rounded-full">Read</a>
+                        <a href={bookData?.bookDrive} target='_blank' className="w-full text-center font-bold text-white bg-primary p-4 hover:shadow-2xl rounded-full">Read</a>
                     </div>
                 </div>
             </div>

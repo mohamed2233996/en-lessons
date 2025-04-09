@@ -19,7 +19,8 @@ const BooksData = [
         image: Book1,
         price: 10,
         author: "Mena Alshemy",
-        link: "/books/connect1"
+        link: "/books/connect1",
+        bookDrive:"https://drive.google.com/drive/folders/1-bFLyP--pCbTqwhTS_vxGiZDGl1i9K3W?usp=drive_link"
     },
     {
         id: 2,
@@ -28,7 +29,8 @@ const BooksData = [
         image: Book2,
         price: 0,
         author: "Mena Alshemy",
-        link: "/books/connect2"
+        link: "/books/connect2",
+        bookDrive:"https://drive.google.com/drive/folders/1-bn9PutQlEtibGDsh7jMEBpEBsJxlgVh?usp=sharing"
     },
     {
         id: 3,
@@ -37,7 +39,8 @@ const BooksData = [
         image: Book3,
         price: 15,
         author: "Mena Alshemy",
-        link: "/books/connect3"
+        link: "/books/connect3",
+        bookDrive:"https://drive.google.com/drive/folders/1-kmsV4xQ9yQFRJjAFt1LnjCPpIZDNlDE?usp=sharing"
     },
     {
         id: 4,
@@ -46,7 +49,8 @@ const BooksData = [
         image: Book4,
         price: 5,
         author: "Mena Alshemy",
-        link: "/books/connect4"
+        link: "/books/connect4",
+        bookDrive:"https://drive.google.com/drive/folders/1-kph00yLR5GqJGwdQ0ga5KtEjr6JKXVi?usp=sharing"
     },
     {
         id: 5,
@@ -55,7 +59,8 @@ const BooksData = [
         image: Book5,
         price: 0,
         author: "Mena Alshemy",
-        link: "/books/connect5"
+        link: "/books/connect5",
+        bookDrive:"https://drive.google.com/drive/folders/1-u5wTH8r8z0PL_cobk4YFEKDxmNTDr4w?usp=sharing"
     },
     {
         id: 6,
@@ -64,7 +69,8 @@ const BooksData = [
         image: Book6,
         price: 0,
         author: "Mena Alshemy",
-        link: "/books/connect6"
+        link: "/books/connect6",
+        bookDrive:"https://drive.google.com/drive/folders/1-wnup_yuecfLt6gVS10xQ1eRayePOTcg?usp=sharing"
     },
     {
         id: 7,
@@ -73,7 +79,8 @@ const BooksData = [
         image: BookPrep1,
         price: 10,
         author: "Mena Alshemy",
-        link: "/books/Preparatory1"
+        link: "/books/Preparatory1",
+        bookDrive:"https://drive.google.com/drive/folders/1-xSjDIckGhzqGw8259LI325ka675cxIl?usp=sharing"
     },
     {
         id: 8,
@@ -82,7 +89,8 @@ const BooksData = [
         image: BookPrep2,
         price: 12,
         author: "Mena Alshemy",
-        link: "/books/Preparatory2"
+        link: "/books/Preparatory2",
+        bookDrive:"https://drive.google.com/drive/folders/10-QJrgvV7cI5kHlaXWOtQizG1OLv43fz?usp=sharing"
     },
     {
         id: 9,
@@ -91,7 +99,8 @@ const BooksData = [
         image: BookPrep3,
         price: 17,
         author: "Mena Alshemy",
-        link: "/books/Preparatory3"
+        link: "/books/Preparatory3",
+        bookDrive:"https://drive.google.com/drive/folders/10SMnFCTvFHDfLOSv-XhIuxqgR9jwhJ9T?usp=sharing"
     },
     {
         id: 10,
@@ -100,7 +109,8 @@ const BooksData = [
         image: BookSec1,
         price: 10,
         author: "Mena Alshemy",
-        link: "/books/sec1"
+        link: "/books/sec1",
+        bookDrive:"https://drive.google.com/drive/folders/10T_ErAqQyiekWs7Uuovjw0CWPU4nrD1Z?usp=sharing"
     },
     {
         id: 11,
@@ -109,7 +119,8 @@ const BooksData = [
         image: BookSec2,
         price: 11,
         author: "Mena Alshemy",
-        link: "/books/sec2"
+        link: "/books/sec2",
+        bookDrive:"https://drive.google.com/drive/folders/10ZjHhvKUNDhQonG5quqJn-1Otp9jmbOF?usp=sharing"
     },
     {
         id: 12,
@@ -118,7 +129,8 @@ const BooksData = [
         image: BookSec3,
         price: 0,
         author: "Mena Alshemy",
-        link: "/books/sec3"
+        link: "/books/sec3",
+        bookDrive:"https://drive.google.com/drive/folders/10efr1bR5YYgozG-RRMPOThdLzcPeZrCp?usp=sharing"
     }
 ]
 
