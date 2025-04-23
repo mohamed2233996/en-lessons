@@ -17,10 +17,10 @@ export default function Home() {
     }
   }, [router]);
 
-  // قم بالعرض فقط عندما نكون في بيئة المتصفح
-  if (!isClient) {
-    return null; // تجنب عرض المحتوى على الخادم أثناء مرحلة SSR
-  }
+  // // قم بالعرض فقط عندما نكون في بيئة المتصفح
+  // if (!isClient) {
+  //   return null; // تجنب عرض المحتوى على الخادم أثناء مرحلة SSR
+  // }
 
   return (
     <div>
