@@ -1,12 +1,13 @@
 'use client'
+import BooksBox from '@/app/_componant/Books Box';
 import BooksData from '@/app/_Data/books';
 import { useParams } from 'next/navigation';
-import React,{useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 const Book = () => {
-    const [bookData ,setBookData] =useState()
-    const book =useParams().book.toString()
+    const [bookData, setBookData] = useState()
+    const book = useParams().book.toString()
 
     if (!book) return <div className='text-center font-bold mt-8'>Book not found.</div>
 
@@ -34,6 +35,20 @@ const Book = () => {
                         <a href="#" className="text-primary w-full text-center mb-2 border border-primary font-bold hover:text-white hover:bg-primary p-4 rounded-full mt-4">Add to Cart</a>
                         <a href={bookData?.bookDrive} target='_blank' className="w-full text-center font-bold text-white bg-primary p-4 hover:shadow-2xl rounded-full">Read</a>
                     </div>
+                </div>
+                <div className="mt-16">
+                    <h2 className='text-4xl font-bold'>Similar books</h2>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                        {BooksData.filter(b => b.title !== bookData.title).map((similarBook) => (
+                            <BooksBox
+                                key={similarBook.id}
+                                title={similarBook.title}
+                                ImgSrc={similarBook.image}
+                                author={similarBook.author}
+                                link={similarBook.link}
+                            />
+                        ))}
+                    </ul>
                 </div>
             </div>
         </div>
