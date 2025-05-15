@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import userImgDark from "@/imges/user.png"
 import userImg from "@/imges/user-image-with-black-background.png"
+import logo from "@/imges/logo-Bg-trans.png"
 
 const Navbar = () => {
 
@@ -52,11 +53,10 @@ const Navbar = () => {
 
     return (
         // Navbar
-        <nav className="bg-white border-gray-200 dark:bg-gray-900">
+        <nav className="bg-white border-gray-200 dark:bg-dark">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="/" className="flex items-end space-x-2 rtl:space-x-reverse text-2xl font-bold">
-                    <span className='text-primary md:text-5xl text-2xl'>EN</span>
-                    <span className="self-center dark:text-white">Lessons</span>
+                <a href="/" className="flex items-center">
+                <Image src={logo} alt='logo' width={80} />
                 </a>
                 <div className='flex items-center gap-6'>
                     <a href="#" className="text-primary border border-primary font-bold hover:text-white hover:bg-primary md:p-4 p-2 rounded-full ">Start Learning</a>
@@ -69,7 +69,7 @@ const Navbar = () => {
                                 } alt="user photo" />
                             </button>
                             {usermenuOpen ?
-                                <div className="z-50 absolute right-0 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+                                <div className="z-50 absolute right-0 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-dark dark:divide-gray-600" id="user-dropdown">
                                     <div className="px-4 py-3">
                                         <span className="block text-sm text-gray-900 dark:text-white">{userLogin.userName}</span>
                                         <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">{userLogin.email}</span>

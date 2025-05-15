@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Landing = () => {
     return (
-        <div className='py-20 bg-white dark:bg-gray-900 dark:text-white'>
+        <div className='py-20 bg-white dark:bg-dark dark:text-white'>
             <div className="container m-auto">
                 <div className="flex items-center flex-col justify-center lg:flex-row gap-6">
                     <div className="text-center lg:text-left w-full lg:w-1/2">

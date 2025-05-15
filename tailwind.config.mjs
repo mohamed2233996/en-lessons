@@ -11,6 +11,7 @@ export default {
       colors: {
         primary: "var(--primary-color)",
         hprimary: "var(--hprimary-color)",
+        dark: "var(--dark-color)",
       },
     },
   },

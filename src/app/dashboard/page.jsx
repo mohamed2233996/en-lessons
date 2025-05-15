@@ -24,7 +24,7 @@ const Page = () => {
     }, []);
 
     return (
-        <div className='py-20 bg-white dark:bg-gray-900 dark:text-white'>
+        <div className='py-20 bg-white dark:bg-dark dark:text-white'>
             <div className="container m-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
                     <div className="flex flex-col lg:items-start items-center pt-8 pb-12">

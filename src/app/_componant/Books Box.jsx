@@ -4,11 +4,11 @@ import React from 'react';
 
 const BooksBox = (prop) => {
     return (
-        <div key={prop.key} className="MainBox relative max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <div key={prop.key} className="MainBox relative max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-dark dark:border-gray-700">
             <div className='overflow-hidden'>
                 <Image className="rounded-t-lg" src={prop.ImgSrc} alt="" />
             </div>
-            <div className="p-5 shadow-lg overflow-hidden infoBox absolute bottom-0 h-1/2 bg-white dark:bg-black bg-opacity-80 transition-all opacity-0 text-center flex flex-col justify-around">
+            <div className="p-5 shadow-lg overflow-hidden infoBox absolute bottom-0 h-1/2 bg-white dark:bg-dark bg-opacity-80 transition-all opacity-0 text-center flex flex-col justify-around">
                 <Link href={prop.link}>
                     <h5 className="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{prop.title}</h5>
                 </Link>
