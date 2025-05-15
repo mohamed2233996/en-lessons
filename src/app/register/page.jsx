@@ -3,6 +3,9 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
+import logo from "@/imges/logo-Bg-trans.png"
+import Image from 'next/image';
+
 
 const Page = () => {
     const router = useRouter();
@@ -37,11 +40,10 @@ const Page = () => {
     return (
         <div className='py-20 bg-white dark:bg-dark dark:text-white'>
             <div className="container m-auto">
-                <div className="flex flex-col items-center pt-16 pb-12">
-                    <a href="/" className="flex items-end space-x-2 rtl:space-x-reverse text-2xl font-bold mb-6">
-                        <span className='text-primary md:text-5xl text-2xl'>EN</span>
-                        <span className="self-center dark:text-white">Lessons</span>
-                    </a>
+                <div className="flex flex-col items-center pb-12">
+                <a href="/" className="flex items-center">
+                <Image src={logo} alt='logo' width={200} className='mb-8' />
+                </a>
                     <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-dark dark:border-gray-700">
                         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
