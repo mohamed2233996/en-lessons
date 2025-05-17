@@ -30,7 +30,7 @@ const Page = () => {
                     <div className="flex flex-col lg:items-start items-center pt-8 pb-12">
                         <h1 className="text-gray-900 dark:text-white text-center lg:text-start">
                             <p className='text-5xl font-bold'>Hello {userLogin?.userName}!</p>
-                            <p className=" mt-4 text-4xl">Welcome to <span className='text-primary'>EN Lessons</span>!</p>
+                            <p className=" mt-4 text-4xl">Welcome to <span className='text-primary'>EN Tips & Tricks</span>!</p>
                         </h1>
                         <p className='text-xl text-gray-600 text-center sm:text-start dark:text-gray-300 mt-10'>Start browsing our exciting libraries and discover the books available</p>
                         <div className="flex justify-center sm:flex-row flex-col gap-4 mt-8">

@@ -3,7 +3,9 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import userImgDark from "@/imges/user.png"
 import userImg from "@/imges/user-image-with-black-background.png"
-import logo from "@/imges/logo-Bg-trans.png"
+import logo from "@/imges/logo.svg"
+import { useRouter } from 'next/navigation';
+import Swal from 'sweetalert2';
 
 const Navbar = () => {
 
@@ -11,6 +13,8 @@ const Navbar = () => {
     const [usermenuOpen, setusermenuOpen] = useState(false);
     const [userLogin, setUserLogin] = useState(null);
     const [isLoggedIn, setisLoggedIn] = useState(Boolean);
+    const router = useRouter();
+
 
 
     useEffect(() => {
@@ -51,15 +55,35 @@ const Navbar = () => {
         }
     }, []);
 
+    const handleStartLearning = () => {
+        if (!isLoggedIn) {
+            Swal.fire({
+                title: "Do you want to continue?",
+                text: "You must be logged in to continue.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#fe3130",
+                cancelButtonColor: "#dadada",
+                confirmButtonText: "Login"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    router.push('/login');
+                }
+            });
+        } else {
+            router.push('/dashboard');
+        }
+    }
+
     return (
         // Navbar
         <nav className="bg-white border-gray-200 dark:bg-dark">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" className="flex items-center">
-                <Image src={logo} alt='logo' width={80} />
+                    <Image src={logo} alt='logo' width={80} />
                 </a>
                 <div className='flex items-center gap-6'>
-                    <a href="#" className="text-primary border border-primary font-bold hover:text-white hover:bg-primary md:p-4 p-2 rounded-full ">Start Learning</a>
+                    <button onClick={handleStartLearning} className="text-primary border border-primary font-bold hover:text-white hover:bg-primary md:p-4 p-2 rounded-full ">Start Learning</button>
                     {isLoggedIn ?
                         <div className="relative">
                             <button type="button" onClick={toggleMeun} className="flex text-smrounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">

@@ -12,7 +12,7 @@ const merriweather = Merriweather({
 });
 
 export const metadata = {
-  title: "En Lessons",
+  title: "EN Tips & Tricks",
   description: "Sponsored by Miss Menna Elshemy❤️",
 };
 

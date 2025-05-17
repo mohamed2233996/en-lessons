@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
-import logo from "@/imges/logo-Bg-trans.png"
+import logo from "@/imges/logo.svg"
 import Image from 'next/image';
 
 

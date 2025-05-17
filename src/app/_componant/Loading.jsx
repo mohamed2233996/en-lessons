@@ -1,7 +1,7 @@
 // components/Loading.tsx
 import Image from 'next/image';
 import React from 'react';
-import logo from "@/imges/logo-Bg-trans.png";
+import logo from "@/imges/logo.svg";
 
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 

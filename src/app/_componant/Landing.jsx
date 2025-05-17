@@ -1,29 +1,66 @@
-import React from 'react';
+"use client"
+import React, { useEffect } from 'react';
 import HeroImg from "@/imges/layer-slider-model.png"
 import Image from 'next/image';
 import Link from 'next/link';
+import Swal from 'sweetalert2';
+import { useRouter } from 'next/navigation';
 
 const Landing = () => {
+
+    const router = useRouter();
+    const handleStartLearning = () => {
+        // التحقق من حالة تسجيل الدخول من localStorage
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        if (!isLoggedIn) {
+            Swal.fire({
+                title: "Do you want to continue?",
+                text: "You must be logged in to continue.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#fe3130",
+                cancelButtonColor: "#dadada",
+                confirmButtonText: "Login"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    router.push('/login');
+                }
+            });
+        } else {
+            router.push('/dashboard');
+        }
+    }
+
+
     return (
-        <div className='py-20 bg-white dark:bg-dark dark:text-white'>
+        <div className='py-20 bg-white dark:bg-dark dark:text-white relative'>
             <div className="container m-auto">
                 <div className="flex items-center flex-col justify-center lg:flex-row gap-6">
                     <div className="text-center lg:text-left w-full lg:w-1/2">
-                        <h1 className="text-5xl font-bold mb-8">Welcome to <span className='text-primary'>EN Lessons</span></h1>
+                        <h1 className="text-5xl font-bold mb-8">Welcome to <br /> <span className='text-primary'>EN Tips & Tricks</span></h1>
                         <p className="text-lg leading-relaxed mb-8 text-gray-600 dark:text-gray-300">
-                        Start with us by pre-booking the online course, or start now to benefit from the courses available on the website.
+                            Start with us by pre-booking the online course, or start now to benefit from the courses available on the website.
                         </p>
-                        <a href="#" className="text-primary border border-primary font-bold hover:text-white hover:bg-primary p-4 rounded-full ">Start Learning</a>
+                        <button onClick={handleStartLearning}
+                            className="text-primary border border-primary font-bold hover:text-white hover:bg-primary p-4 rounded-full">Start Learning</button>
                     </div>
                     <div className="lg:w-1/2 w-full px-2 relative">
                         <div className='z-10 relative'>
                             <Image className="w-full h-auto z-10" src={HeroImg} alt="Hero Image" />
                         </div>
                         <span className='absolute top-1/2 right-1/2 -translate-y-1/2 translate-x-1/2 w-[60%] h-[60%]  bg-primary rounded-2xl rotate-12'></span>
+                        <svg width="280" height="280" className='absolute -top-4 -right-4' viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="red-dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                    <circle cx="2" cy="2" r="2" fill="#FF3B30" />
+                                </pattern>
+                            </defs>
+                            <rect width="200" height="200" fill="url(#red-dots)" />
+                        </svg>
                     </div>
                 </div>
                 <div className='text-center flex flex-col items-center gap-4 pt-20'>
-                    <h2 className='text-4xl font-bold'>Why Choose <span className='text-primary'>EN Lessons</span>?</h2>
+                    <h2 className='text-4xl font-bold'>Why Choose <span className='text-primary'>EN Tips & Tricks</span>?</h2>
                     <ul className='text-lg text-gray-600 dark:text-gray-300'>
                         <li className='flex items-center gap-2'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className='text-primary' fill="none">

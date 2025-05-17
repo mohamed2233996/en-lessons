@@ -12,7 +12,8 @@
     "flowbite": "^2.5.2",
     "next": "15.1.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sweetalert2": "^11.21.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
