@@ -15,7 +15,7 @@ const BooksData = [
     {
         id: 1,
         title: "Connect1",
-        discrpation:"A book that contains everything related to the first grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation:"descConnect1",
         image: Book1,
         price: 10,
         author: "Mena Alshemy",
@@ -25,7 +25,7 @@ const BooksData = [
     {
         id: 2,
         title: "Connect2",
-        discrpation: "A book that contains everything related to the second grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descConnect2",
         image: Book2,
         price: 0,
         author: "Mena Alshemy",
@@ -35,7 +35,7 @@ const BooksData = [
     {
         id: 3,
         title: "Connect3",
-        discrpation: "A book that contains everything related to the third grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descConnect3",
         image: Book3,
         price: 15,
         author: "Mena Alshemy",
@@ -45,7 +45,7 @@ const BooksData = [
     {
         id: 4,
         title: "Connect4",
-        discrpation: "A book that contains everything related to the fourth grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descConnect4",
         image: Book4,
         price: 5,
         author: "Mena Alshemy",
@@ -55,7 +55,7 @@ const BooksData = [
     {
         id: 5,
         title: "Connect5",
-        discrpation: "A book that contains everything related to the fifth grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descConnect5",
         image: Book5,
         price: 0,
         author: "Mena Alshemy",
@@ -65,7 +65,7 @@ const BooksData = [
     {
         id: 6,
         title: "Connect6",
-        discrpation: "A book that contains everything related to the sixth grade of primary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descConnect6",
         image: Book6,
         price: 0,
         author: "Mena Alshemy",
@@ -75,7 +75,7 @@ const BooksData = [
     {
         id: 7,
         title: "Preparatory 1",
-        discrpation: "A book that contains everything related to the first grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descPrep1",
         image: BookPrep1,
         price: 10,
         author: "Mena Alshemy",
@@ -85,7 +85,7 @@ const BooksData = [
     {
         id: 8,
         title: "Preparatory 2",
-        discrpation: "A book that contains everything related to the second grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descPrep2",
         image: BookPrep2,
         price: 12,
         author: "Mena Alshemy",
@@ -95,7 +95,7 @@ const BooksData = [
     {
         id: 9,
         title: "Preparatory 3",
-        discrpation: "A book that contains everything related to the third grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descPrep3",
         image: BookPrep3,
         price: 17,
         author: "Mena Alshemy",
@@ -105,7 +105,7 @@ const BooksData = [
     {
         id: 10,
         title: "Secondary 1",
-        discrpation: "A book that contains everything related to the first grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descSec1",
         image: BookSec1,
         price: 10,
         author: "Mena Alshemy",
@@ -115,7 +115,7 @@ const BooksData = [
     {
         id: 11,
         title: "Secondary 2",
-        discrpation: "A book that contains everything related to the second grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descSec2",
         image: BookSec2,
         price: 11,
         author: "Mena Alshemy",
@@ -125,7 +125,7 @@ const BooksData = [
     {
         id: 12,
         title: "Secondary 3",
-        discrpation: "A book that contains everything related to the third grade of secondary school, including grammar rules, vocabulary, and phonetic rules.",
+        discrpation: "descSec3",
         image: BookSec3,
         price: 0,
         author: "Mena Alshemy",

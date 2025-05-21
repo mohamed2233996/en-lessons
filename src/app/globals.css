@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: math;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 .MainBox:hover .infoBox{
@@ -40,4 +40,11 @@ body {
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
   position: absolute;
+}
+
+.costamF{
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  transform: rotate(33deg);
 }

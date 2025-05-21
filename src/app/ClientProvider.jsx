@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Loading from "./_componant/Loading";
 import Navbar from "./_componant/Navbar";
+import '@/i18n'; 
 
 export default function ClientProvider({ children }) {
     const pathname = usePathname();

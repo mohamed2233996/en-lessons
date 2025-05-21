@@ -1,15 +1,14 @@
-import { Merriweather } from "next/font/google";
+import { IBM_Plex_Sans_Arabic } from "next/font/google";
 import "./globals.css";
-import Navbar from "./_componant/Navbar";
 import ClientProvider from "./ClientProvider";
 
 
+const ibmArabic = IBM_Plex_Sans_Arabic({
+  subsets: ['arabic'],
+  weight: ["100","200","300","400", "700"],
+  display: 'swap',
+})
 
-const merriweather = Merriweather({
-  variable: "--font-merriweather",
-  subsets: ["latin"],
-  weight: ["400", "700", "900"]
-});
 
 export const metadata = {
   title: "EN Tips & Tricks",
@@ -19,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${merriweather.variable} antialiased bg-white dark:bg-dark`}>
+      <body className={`${ibmArabic.variable} antialiased bg-white dark:bg-dark`}>
         <ClientProvider>
           {children}
           </ClientProvider>

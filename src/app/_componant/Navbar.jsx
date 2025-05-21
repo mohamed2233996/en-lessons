@@ -6,6 +6,8 @@ import userImg from "@/imges/user-image-with-black-background.png"
 import logo from "@/imges/logo.svg"
 import { useRouter } from 'next/navigation';
 import Swal from 'sweetalert2';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
 
@@ -14,6 +16,7 @@ const Navbar = () => {
     const [userLogin, setUserLogin] = useState(null);
     const [isLoggedIn, setisLoggedIn] = useState(Boolean);
     const router = useRouter();
+    const { t } = useTranslation();
 
 
 
@@ -58,13 +61,13 @@ const Navbar = () => {
     const handleStartLearning = () => {
         if (!isLoggedIn) {
             Swal.fire({
-                title: "Do you want to continue?",
-                text: "You must be logged in to continue.",
+                title: t("navbar.alertTitle"),
+                text: t("navbar.alertText"),
                 icon: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#fe3130",
                 cancelButtonColor: "#dadada",
-                confirmButtonText: "Login"
+                confirmButtonText: t("navbar.login")
             }).then((result) => {
                 if (result.isConfirmed) {
                     router.push('/login');
@@ -83,11 +86,11 @@ const Navbar = () => {
                     <Image src={logo} alt='logo' width={80} />
                 </a>
                 <div className='flex items-center gap-6'>
-                    <button onClick={handleStartLearning} className="text-primary border border-primary font-bold hover:text-white hover:bg-primary md:p-4 p-2 rounded-full ">Start Learning</button>
+                    <button onClick={handleStartLearning} className="text-primary border border-primary font-bold hover:text-white hover:bg-primary md:p-4 p-2 rounded-full ">  {t('navbar.startLearning')}</button>
                     {isLoggedIn ?
                         <div className="relative">
                             <button type="button" onClick={toggleMeun} className="flex text-smrounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
-                                <span className="sr-only">Open user menu</span>
+                                <span className="sr-only">{t('navbar.openUserMenu')}</span>
                                 <Image className="w-8 h-8 rounded-full" src={
                                     theme === 'dark' ? userImgDark : userImg
                                 } alt="user photo" />
@@ -100,10 +103,10 @@ const Navbar = () => {
                                     </div>
                                     <ul className="py-2" aria-labelledby="user-menu-button">
                                         <li>
-                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">{t('navbar.settings')}</a>
                                         </li>
                                         <li>
-                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">{t('navbar.earnings')}</a>
                                         </li>
                                         <li>
                                             <a href="#" onClick={
@@ -111,7 +114,7 @@ const Navbar = () => {
                                                     localStorage.removeItem('isLoggedIn');
                                                     window.location.href = '/';
                                                 }
-                                            } className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                                            } className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">{t('navbar.signout')}</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -133,6 +136,7 @@ const Navbar = () => {
                             </svg>
                         )}
                     </button>
+                    <LanguageSwitcher />
                 </div>
             </div>
         </nav>
