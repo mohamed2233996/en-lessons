@@ -79,8 +79,7 @@ const Navbar = () => {
     }
 
     return (
-        // Navbar
-        <nav className="bg-white border-gray-200 dark:bg-dark">
+        <nav className="bg-white border-gray-200 dark:bg-dark fixed top-0 z-[1000] w-full shadow-xl">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" className="flex items-center">
                     <Image src={logo} alt='logo' width={80} />

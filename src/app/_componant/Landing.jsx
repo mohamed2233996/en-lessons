@@ -35,7 +35,7 @@ const Landing = () => {
 
 
     return (
-        <div className='py-20 bg-white dark:bg-dark dark:text-white relative'>
+        <div className='py-20 bg-white dark:bg-dark dark:text-white relative bg-[radial-gradient(#ff1414_1px,transparent_1px)] [background-size:32px_32px]'>
             <div className="container m-auto">
                 <div className="flex items-center flex-col justify-center lg:flex-row gap-6">
                     <div className="text-center lg:text-left w-full lg:w-1/2">

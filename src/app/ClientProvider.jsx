@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Loading from "./_componant/Loading";
 import Navbar from "./_componant/Navbar";
 import '@/i18n'; 
+import Footer from "./_componant/Footer";
 
 export default function ClientProvider({ children }) {
     const pathname = usePathname();
@@ -26,6 +27,7 @@ export default function ClientProvider({ children }) {
         <>
             <Navbar />
             {loading ? <Loading visible={loading} /> : children}
+            <Footer />
         </>
     );
 }

@@ -67,5 +67,12 @@
   "LatestPosts": "Latest Tricks Posts",
   "Loadingposts": "Loading posts...",
   "Noposts": "No posts available.",
-  "ViewFacebook": "View on Facebook"
+  "ViewFacebook": "View on Facebook",
+    "footer": {
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "licensing": "Licensing",
+    "contact": "Contact",
+    "rights": "All Rights Reserved."
+  }
 }

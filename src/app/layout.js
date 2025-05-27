@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${ibmArabic.variable} antialiased bg-white dark:bg-dark`}>
+      <body className={`${ibmArabic.variable} antialiased bg-white dark:bg-dark pt-24`}>
         <ClientProvider>
           {children}
           </ClientProvider>

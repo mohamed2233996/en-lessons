@@ -68,5 +68,12 @@
   "LatestPosts": "اخر المنشورات",
   "Loadingposts": "جاري التحميل.....",
   "Noposts": "لا يوجد منشورات الان",
-  "ViewFacebook": "عرض علي فيس بوك"
+  "ViewFacebook": "عرض علي فيس بوك",
+    "footer": {
+    "about": "من نحن",
+    "privacy": "سياسة الخصوصية",
+    "licensing": "الترخيص",
+    "contact": "اتصل بنا",
+    "rights": "جميع الحقوق محفوظة."
+  }
 }

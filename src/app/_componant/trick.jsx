@@ -7,7 +7,8 @@ const Trick = () => {
     const { t } = useTranslation();
 
     return (
-        <section className="bg-primary py-12 px-6 text-center text-white relative">
+        <section className="py-12 px-6 text-center text-white relative bg-[linear-gradient(225deg,_rgba(254,49,48,1),_rgba(246,15,119,0.7)_66%,_rgba(229,30,209,0.7))]
+">
             <div className="max-w-3xl mx-auto">
                 <Image src={tricksicon} alt="EN Tricks Icon"
                     className="mx-auto w-32 h-32"
