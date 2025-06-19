@@ -81,11 +81,11 @@ const Navbar = () => {
     return (
         <nav className="bg-white border-gray-200 dark:bg-dark fixed top-0 z-[1000] w-full shadow-xl">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="/" className="flex items-center">
+                <a href="/" className="flex items-center w-full sm:w-fit justify-center mb-4 sm:mb-0">
                     <Image src={logo} alt='logo' width={80} />
                 </a>
-                <div className='flex items-center gap-6'>
-                    <button onClick={handleStartLearning} className="text-primary border border-primary font-bold hover:text-white hover:bg-primary md:p-4 p-2 rounded-full ">  {t('navbar.startLearning')}</button>
+                <div className='flex items-center w-[70%] m-auto sm:m-0 sm:w-fit justify-center flex-wrap gap-6'>
+                    <button onClick={handleStartLearning} className="text-primary w-full sm:w-fit border border-primary font-bold hover:text-white hover:bg-primary md:p-4 p-2 rounded-full ">  {t('navbar.startLearning')}</button>
                     {isLoggedIn ?
                         <div className="relative">
                             <button type="button" onClick={toggleMeun} className="flex text-smrounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">

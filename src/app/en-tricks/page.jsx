@@ -55,7 +55,7 @@ const Page = () => {
 
 
     return (
-        <div className="py-20 px-6 text-center bg-gray-50 dark:bg-dark min-h-screen">
+        <div className="pb-20 pt-44 px-6 text-center bg-gray-50 dark:bg-dark min-h-screen">
             <h2 className="text-3xl font-bold text-dark dark:text-white mb-10">
                 {t('LatestPosts')}
             </h2>
