@@ -39,12 +39,12 @@ const Landing = () => {
             <div className="container m-auto">
                 <div className="flex items-center flex-col justify-center lg:flex-row gap-6">
                     <div className="text-center lg:text-left w-full lg:w-1/2">
-                        <h1 className="text-5xl font-bold mb-8">{t('landing.title')} <br /> <span className='text-primary'>{t('landing.brand')}</span></h1>
+                        <h1 className="text-5xl font-bold mb-8 leading-[1.5]">{t('landing.title')} <br /> <span className='text-primary'>{t('landing.brand')}</span></h1>
                         <p className="text-lg leading-relaxed mb-8 text-gray-600 dark:text-gray-300">
                             {t('landing.description')}
                         </p>
                         <button onClick={handleStartLearning}
-                            className="transition-all duration-300 text-primary border border-primary font-bold hover:text-white hover:bg-primary p-4 rounded-full">  {t('landing.button')}
+                            className="transition-all w-[80%] duration-300 text-primary border border-primary font-bold hover:text-white hover:bg-primary p-4 rounded-full">  {t('landing.button')}
                         </button>
                     </div>
                     <div className="lg:w-1/2 w-full px-2 relative">
@@ -118,17 +118,6 @@ const Landing = () => {
                     <div className='mt-8'>
                         <p className='font-bold'>{t('footer.sponsor')} <span className='text-primary'>Menna Elshemy❤️️</span></p>
                         <p className='font-bold'>{t('footer.programmer')} <span className='text-primary'>Mohamed Gamal❤️️</span></p>
-                    </div>
-                    <div className='flex justify-center items-center'>
-                        <div className='ml-4'>
-                            <span href='/faq'>{t('footer.faq')}</span>
-                        </div>
-                        <div className='ml-4'>
-                            <span href='/terms'>{t('footer.terms')}</span>
-                        </div>
-                        <div className='ml-4'>
-                            <span href='/privacy'>{t('footer.privacy')}</span>
-                        </div>
                     </div>
                 </div>
             </div>

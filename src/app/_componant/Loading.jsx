@@ -36,7 +36,7 @@ const Loading = () => {
 
             {/* الشعار */}
             <div className="animate-bounce z-10">
-                <Image src={logo} alt="Logo" className="w-40" />
+                <Image src={logo} alt="Logo" className="w-40" priority />
             </div>
         </div>
     );
