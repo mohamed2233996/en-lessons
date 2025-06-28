@@ -1,15 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import tricksicon from "@/imges/enTrickIcon.png"
 import { motion } from 'framer-motion';
 
-
-const Trick = () => {
+import synonymIcon from "@/imges/synonymIcon.png";
+const Synonym = () => {
     const { t } = useTranslation();
 
     return (
-               <motion.div
+        <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.01 }}
@@ -18,21 +17,23 @@ const Trick = () => {
             className="py-12 px-6 text-center text-white relative"
         >
             <div className="max-w-3xl mx-auto">
-                <Image src={tricksicon} alt="EN Tricks Icon"
+                <Image
+                    src={synonymIcon}
+                    alt="Synonym Finder Icon"
                     className="mx-auto w-32 h-32"
                 />
-                <h2 className="text-3xl font-bold mb-3">{t('newFeature')}</h2>
+                <h2 className="text-3xl font-bold mb-3">{t('synonymFeatureTitle')}</h2>
                 <p className="text-lg mb-6">
-                    {t('trickDescription')}
+                    {t('synonymFeatureDesc')}
                 </p>
                 <a
-                    href="/en-tricks"
-                    className="inline-block bg-white text-hprimary font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition duration-300"
+                    href="/Synonym"
+                    className="inline-block bg-white text-primary font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition duration-300"
                 >
-                    {t('tryNow')}
+                    {t('tryNowSynonym')}
                 </a>
             </div>
- <motion.span
+            <motion.span
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{ type: 'spring', stiffness: 150, delay: 0.3 }}
@@ -43,8 +44,7 @@ const Trick = () => {
                 <span className="costamF">{t('New')}</span>
             </motion.span>
         </motion.div>
-
     );
 }
 
-export default Trick;
+export default Synonym;

@@ -10,31 +10,20 @@ export default function Home() {
   const [loading, setLoading] = useState(true); // حالة التحميل
 
   useEffect(() => {
-    
-    // تأكد من أن الكود يعمل في المتصفح فقط
-    setIsClient(true);
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    // توجيه المستخدم مباشرة حسب حالته
     if (isLoggedIn) {
-      router.push('/dashboard');
+      router.replace("/dashboard");
+    } else {
+      router.replace("/login");
     }
-    setLoading(false); // إذا لم يكن مسجل دخول، أظهر الصفحة الرئيسية
-
   }, [router]);
 
-  // // قم بالعرض فقط عندما نكون في بيئة المتصفح
-  // if (!isClient) {
-  //   return null; // تجنب عرض المحتوى على الخادم أثناء مرحلة SSR
-  // }
-
-    // إذا لا يزال يتحقق من الحالة، أظهر شاشة تحميل
-    if (loading) {
-      return <Loading />;
-    }
-
   return (
-    <div>
-      <Landing />
-    </div>
+  <div>
+    <Loading />
+  </div>
   );
+
 }
