@@ -1,6 +1,8 @@
 import { IBM_Plex_Sans_Arabic } from "next/font/google";
 import "./globals.css";
 import ClientProvider from "./ClientProvider";
+import Script from 'next/script';
+
 
 
 const ibmArabic = IBM_Plex_Sans_Arabic({
@@ -22,6 +24,8 @@ export default function RootLayout({ children }) {
         <ClientProvider>
           {children}
           </ClientProvider>
+          <Script src="/some-non-critical.js" strategy="lazyOnload" />
+
       </body>
     </html>
   );

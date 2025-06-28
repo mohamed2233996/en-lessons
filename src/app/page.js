@@ -16,7 +16,7 @@ export default function Home() {
     if (isLoggedIn) {
       router.replace("/dashboard");
     } else {
-      router.replace("/login");
+      router.replace("/landing");
     }
   }, [router]);
 
