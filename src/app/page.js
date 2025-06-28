@@ -1,6 +1,5 @@
 'use client'
 import { useRouter } from "next/navigation";
-import Landing from "./_componant/Landing";
 import { useEffect, useState } from "react";
 import Loading from "./_componant/Loading";
 
