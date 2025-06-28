@@ -46,7 +46,7 @@ const Page = () => {
     };
 
     return (
-        <div className='py-20 bg-white dark:bg-dark dark:text-white'>
+        <div className='pb-20 pt-40 bg-white dark:bg-dark dark:text-white'>
             <div className="container m-auto">
                 <div className="flex flex-col items-center pb-12">
                 <a href="/" className="flex items-center">
