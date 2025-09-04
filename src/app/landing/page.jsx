@@ -46,9 +46,12 @@ const Page = () => {
                     </div>
                     <div className="lg:w-1/2 w-full px-2 relative">
                         <div className='z-10 relative'>
-                            <Image className="w-full h-auto z-10" width={600}
+                            <Image className="w-full h-auto z-10" 
+                                width={600}
                                 height={400}
-                                priority src={HeroImg} alt="Hero Image" />
+                                layout="responsive"
+                                priority 
+                                src={HeroImg} alt="Hero Image" />
                         </div>
                         <span className='absolute top-1/2 right-1/2 -translate-y-1/2 translate-x-1/2 w-[60%] h-[60%]  bg-primary rounded-2xl rotate-12'></span>
                         <svg width="280" height="280" className='absolute -top-4 -right-4' viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
