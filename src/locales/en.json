@@ -7,9 +7,9 @@
   "learnMoreBtn": "Learn More",
   "popularBooks": "Popular Books",
   "booksDescription": "Discover the latest and greatest books in English language",
-  "newFeature": "✨ New Feature: EN Tricks",
+  "newFeature": " New Feature: EN Tricks",
   "trickDescription": "Challenge your English skills with high-level puzzles and tricky concepts. A fun and interactive way to boost your vocabulary and language mastery.",
-  "tryNow": "🚀 Try EN Tricks Now",
+  "tryNow": " Try EN Tricks Now",
   "enTricksIconAlt": "EN Tricks Icon",
   "bookDescription": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
   "by": "By",
@@ -88,5 +88,11 @@
   "synonymFeatureTitle": "What's the synonym?",
   "synonymFeatureDesc": "A feature that allows you to find synonyms for English words, enhancing your vocabulary and language skills.",
   "tryNowSynonym": "Try now what is synonym?",
-  "Sydescription": "Excuse your knowledge of searching for a word and reaching its synonyms and words associated with it"
+  "Sydescription": "Excuse your knowledge of searching for a word and reaching its synonyms and words associated with it",
+  "mainFeatures": "Our services",
+  "newFeature2": "Test Center",
+  "TestCenterDescription": "Download ready -made PDF tests that include weekly, mid and final tests, with answer and review solutions.",
+  "testCentertryNow": "Discover the tests",
+  "ExamPDFs": "Exam PDF",
+  "DownloadPDF": "Download PDF"
 }

@@ -8,6 +8,7 @@ import Trick from '../_componant/trick';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import Synonym from '../_componant/synonym';
+import ExamCard from '../_componant/ExamCard';
 
 const Page = () => {
     const router = useRouter();
@@ -52,10 +53,13 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-
-            <div className='flex flex-col lg:flex-row items-center justify-center bg-[linear-gradient(225deg,_rgba(254,49,48,1),_rgba(246,15,119,0.7)_66%,_rgba(229,30,209,0.7))]'>
-            <Trick />
-            <Synonym />
+            <div className='bg-[linear-gradient(225deg,_rgba(254,49,48,1),_rgba(246,15,119,0.7)_66%,_rgba(229,30,209,0.7))] py-20 px-4'>
+                <h2 className='text-4xl font-bold text-white dark:text-dark text-center mb-8'>{t('mainFeatures')}</h2>
+                <div className='flex flex-col lg:flex-row items-center justify-center'>
+                    <ExamCard />
+                    <Trick />
+                    <Synonym />
+                </div>
             </div>
             <Books />
         </>
