@@ -95,5 +95,8 @@
   "TestCenterDescription": "حمّل اختبارات جاهزة بصيغة PDF تشمل اختبارات أسبوعية، نصفية ونهائية، مع نماذج إجابة وحلول للمراجعة.",
   "testCentertryNow": "اكتشف الاختبارات",
   "ExamPDFs": "امتحانات PDF",
-  "DownloadPDF": "تنزيل"
+  "DownloadPDF": "تنزيل",
+  "PreviewPDF": "معاينة",
+  "Close": "اغلاق",
+  "SearchPDFs": "بحث"
 }

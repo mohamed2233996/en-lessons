@@ -94,5 +94,8 @@
   "TestCenterDescription": "Download ready -made PDF tests that include weekly, mid and final tests, with answer and review solutions.",
   "testCentertryNow": "Discover the tests",
   "ExamPDFs": "Exam PDF",
-  "DownloadPDF": "Download PDF"
+  "DownloadPDF": "Download PDF",
+  "PreviewPDF": "Preview",
+  "Close": "closing",
+  "SearchPDFs": "Search PDF"
 }
